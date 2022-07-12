@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travelmania</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <header class="header">
+
+    <a class="logo"> <i ></i><span>T</span>ravelmania</a>
+
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="travel.html">home</a>
+        <a href="#about">about</a>
+        <a href="#googlemaps">maps</a>
+        <a href="#packages">packages</a>
+        <a href="#reviews">reviews</a>
+        <a href="#blogs">blogs</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+  <h1 class="brand" style="position: relative; left:45%; color: #9b00e8; font-size:xx-large;"> Booking</h1>
+    
+  <div class="container">
+   
+    <div class="wrapper">
+      <div class="company-info">
+      </div>
+      <div class="contact">
+        <div class="alert" style="font-size:medium">Your Booking has Been Done !!! Confirmation will be given shortly</div>
+        <form id="bookingForm">
+          <p>
+            <label style="font-size:medium">From</label>
+            <input type="text" name="from" placeholder="From Where"id="from" required>
+          </p>
+          <p>
+            <label style="font-size:medium">To</label>
+            <input type="text" name="To" placeholder="To Where" id="To">
+          </p>
+          <p>
+            <label style="font-size:medium">No of guests</label>
+            <input type="number" name="guests" id="guests" required>
+          </p>
+          <p>
+            <label style="font-size:medium">Phone Number</label>
+            <input type="number" placeholder="+91 0000-000000" name="phone" id="phone">
+          </p>
+          <p>
+            <label style="font-size:medium">Arrivals</label>
+            <input type="Date" name="adate" id="adate">
+          </p>
+          <p>
+            <label style="font-size:medium">Leaving</label>
+            <input type="Date" name="lphone" id="ldate">
+          </p>
+          <p class="full">
+            <label for="Payments" style="font-size:medium">Payment</label>
+            <select required name='payments' id="pay" onchange='this.form()'>
+                <option value="">Choose your option</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+                <option value="Paytm">Paytm</option>
+                <option value="Phonepe">Phonepe</option>
+                <option value="Googlepe">Googlepay</option>
+            </select>
+        </fieldset>
+          </p>
+          <p class="full">
+            <button type="submit" style="color:aliceblue; font-weight: 600;">Book Now</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="book.js"></script>
+</body>
+</html>
